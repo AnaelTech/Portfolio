@@ -54,10 +54,7 @@ export function CardGrid() {
           <h2 className="text-xl font-semibold my-2">{card.name}</h2>
           <p className="text-gray-700 mb-4">{card.description}</p>
           {card.link.includes("github.com") ? (
-            <a
-              href={`https://${card.link}`}
-              className="text-blue-500 hover:underline"
-            >
+            <a href={`${card.link}`} className="text-blue-500 hover:underline">
               <svg
                 width="20px"
                 height="20px"
