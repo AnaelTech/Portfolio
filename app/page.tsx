@@ -1,18 +1,16 @@
-import { CardGrid } from "./blog/posts/CardGrid";
+import Image from "next/image";
 
 export default function Page() {
   return (
     <section>
-      <img
+      <Image
         alt="Profile Picture"
         loading="lazy"
-        width="60"
-        height="60"
-        decoding="async"
-        data-nimg="1"
-        className="rounded-full mb-5"
-        src="http://unsplash.it/g/60/60?random&blur&gravity=center"
-      ></img>
+        width={60}
+        height={60}
+        className="rounded-full mb-5 h-16 w-16 object-cover"
+        src="/images/IMG_5442.jpg"
+      ></Image>
       <h1 className="mb-8 text-5xl font-semibold tracking-tighter">
         Sofware Engineer Junior.
       </h1>
@@ -28,9 +26,6 @@ export default function Page() {
         </strong>
         .
       </p>
-      {/* <div className="my-8">
-        <CardGrid />
-      </div> */}
     </section>
   );
 }
