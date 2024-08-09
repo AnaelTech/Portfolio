@@ -48,9 +48,12 @@ export function CardGrid() {
       {cards.map((card) => (
         <div
           key={card.name}
-          className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
+          className="bg-white p-2 rounded-lg shadow-xl hover:shadow-lg  transition-shadow duration-200"
         >
-          <img src={card.picture} alt="" />
+          {" "}
+          <a href={`${card.link}`}>
+            <img src={card.picture} alt="" />
+          </a>
           <h2 className="text-xl font-semibold my-2">{card.name}</h2>
           <p className="text-gray-700 mb-4">{card.description}</p>
           {card.link.includes("github.com") ? (
