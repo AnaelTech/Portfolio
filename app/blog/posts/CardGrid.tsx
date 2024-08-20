@@ -44,7 +44,7 @@ export function CardGrid() {
   ];
 
   return (
-    <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 hover:cursor-pointer xl:grid-cols-2">
       {cards.map((card) => (
         <div
           key={card.name}
