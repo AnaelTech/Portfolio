@@ -24,7 +24,7 @@ export function CardGrid() {
     {
       name: "BusinessCase Front-end",
       picture:
-        "https://carnot-snt.enseigne.ac-lyon.fr/snt_web/img/site-en-construction-04_clrFFFFFF.png",
+        "/images/BCF.png",
       description:
         "It's my project for my school to be graduate it's a website for a pressing",
       link: "https://github.com/AnaelTech/Test-BC-Front.git",
@@ -48,7 +48,7 @@ export function CardGrid() {
       {cards.map((card) => (
         <div
           key={card.name}
-          className="bg-white p-2 rounded-lg shadow-xl hover:shadow-lg  transition-shadow duration-200"
+          className="bg-white p-2 rounded-lg shadow-xl hover:shadow-lg  transition-shadow duration-200 transition transform hover:shadow-lg hover:-translate-y-1"
         >
           {" "}
           <a href={`${card.link}`}>
